@@ -1,5 +1,4 @@
 
-
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
@@ -85,3 +84,10 @@ $(document).ready(function(){
     });
 });
 
+//construction
+
+  
+
+  
+
+  
