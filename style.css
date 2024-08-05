@@ -1385,3 +1385,176 @@ figure.snip1200.hover p {
             
           }
         }
+
+        /* Contact Page */
+
+        .contact-container {
+          position: relative;
+          width: 100%;
+          height: 70vh; /* 80% of the viewport height */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+      }
+      
+      .background-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 1;
+      }
+      
+      .gradient-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+          z-index: 2;
+      }
+      
+      .contact-text {
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          font-size: 3rem;
+          font-weight: bold;
+          text-align: center;
+      }        
+
+      .formWrapper{
+        width: 100%;
+        background: #ffffff;
+      }
+      .form-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #ffffff;
+        box-sizing: border-box;
+        
+        color: #000000;
+        h2,p{
+
+          text-align: center; 
+        }
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .form-column {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    textarea {
+        resize: vertical;
+        height: calc(2 * 40px + 45px); /* Twice the height of other fields */
+    }
+    
+    .form-submit {
+        width: 100%;
+        text-align: center;
+    }
+    
+    button {
+        padding: 10px 20px;
+        background-color: #ff3433;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #f42121;
+    }
+    
+    @media (max-width: 768px) {
+        form {
+            flex-direction: column;
+        }
+    }
+
+    .locations-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      background: #e1e1e1;
+  }
+  
+  .location {
+      flex: 1;
+      min-width: 300px;
+      background-color: #f1f1f1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+  }
+  
+  .location-image {
+      position: relative;
+      height: 400px;
+  }
+  
+  .location-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+  .location-name {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  
+  .location-info {
+      padding: 15px;
+      background-color: #ff3433;
+      color: white;
+  }
+  
+  .location-info h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+      .locations-container {
+          flex-direction: column;
+      }
+  }
+    
