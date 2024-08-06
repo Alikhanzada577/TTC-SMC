@@ -89,7 +89,7 @@ header .menu{
   
   .nav > .nav-links > a {
     display: inline-block;
-    padding: 13px 10px 13px 50px;
+    padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #ff3433;
   }
@@ -141,6 +141,7 @@ header .menu{
     }
     .nav > .nav-links > a {
       display: block;
+      padding: 13px 10px 13px 50px;
       width: 100%;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
@@ -241,14 +242,15 @@ header .menu{
         .slider .list .item .company-brief{
             padding: 4rem 0 4rem 1rem;
             width: 20%;
-            top: 15%;
+            top: 10%;
             
             h3{
-                font-size: 20px;
-                margin-bottom: 20px;
+                font-size: 2.5rem;
+                margin-top: 0;
+                margin-bottom: 10px;
             }
             p{
-                font-size: 9px;
+                font-size: 15px;
             }
 }}
 
@@ -409,7 +411,7 @@ header .menu{
 /* Container for the slider */
 .container {
     width: 100%;
-    background: rgb(234, 234, 234);;
+    background: rgb(255, 255, 255);;
     display: flex;
     flex-direction: column;
     justify-content: center;
