@@ -17,43 +17,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
   </head>
   <body>
-    <!-- header -->
-    <!-- <header>
-      <div class="logo">
-        <img src="img/logo.png" />
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li>About</li>
-        <li>Careers</li>
-      </ul>
-     
-    </header> -->
 
-    <div class="nav">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <a href="/"><img src="img/logo.png" /></a>
+    <nav class="navbar">
+      <div class="navbar-logo">
+          <a href="/"><img src="img/logo.png" alt="Logo"></a>
       </div>
-
-      <div class="nav-btn">
-        <label for="nav-check">
+      <input type="checkbox" id="navbar-toggle">
+      <label for="navbar-toggle" class="navbar-toggle-label">
           <span></span>
           <span></span>
           <span></span>
-        </label>
+      </label>
+      <div class="navbar-links">
+          <a href="/about/">About</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">Services</a>
+            <div class="dropdown-menu">
+                <a href="/Construction/">Construction</a>
+                <a href="/Energy/">Energy</a>
+                <a href="/logistics/">Logistics</a>
+                <a href="/waste-management/">Waste Recycle</a>
+            </div>
+        </div>
+          <a href="/contact/">Contact Us</a>
+          
       </div>
-
-      <div class="nav-links">
-        <a href="/about/">About</a>
-        <a href="/Construction/">Construction</a>
-        <a href="/Energy/">Energy</a>
-        <a href="/logistics/">Logistics</a>
-        <a href="/contact/">Contact Us</a>
-
-        <!-- <a href="#">Career</a> -->
-      </div>
-    </div>
+  </nav>
 
     <!-- slider -->
 

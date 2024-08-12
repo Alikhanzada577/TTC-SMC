@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <div class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header">
-          <img src="/img/logo.png" />
-        </div>
-  
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-  
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/Construction/">Construction</a>
-          <a href="/waste-management/">Waste Recycle</a>
-          <a href="/Energy/">Energy</a>
-          <a href="/logistics/">Logistics</a>
-          <a href="/contact/">Contact Us</a>
-        </div>
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+    </div>
+    <input type="checkbox" id="navbar-toggle">
+    <label for="navbar-toggle" class="navbar-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="navbar-links">
+      <a href="/">Home</a>
+        <a href="/about/">About</a>
+        
+        <div class="dropdown">
+          <a href="#" class="dropdown-toggle">Services</a>
+          <div class="dropdown-menu">
+              <a href="/Construction/">Construction</a>
+              <a href="/Energy/">Energy</a>
+              <a href="/logistics/">Logistics</a>
+              <a href="/waste-management/">Waste Recycle</a>
+          </div>
       </div>
+        <a href="/contact/">Contact Us</a>
+        
+    </div>
+</nav>
       <div class="careers-wrapper">
       <div class="careers-header">Careers</div>
       <div class="form-wrapper-unique">
