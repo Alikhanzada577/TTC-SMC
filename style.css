@@ -331,6 +331,7 @@ svg{
     height: 100px;
     width: 250px;
     padding-top: 0.5rem;
+    margin: 0 1rem;
     img {
       object-fit: cover;
     }
