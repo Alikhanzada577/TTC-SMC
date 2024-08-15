@@ -2145,7 +2145,7 @@ figure.snip1200.hover p {
 
 .food-card img {
   width: 100%;
-  height: auto;
+  height: 12rem;
 }
 
 .food-card-content {
@@ -2184,7 +2184,7 @@ figure.snip1200.hover p {
 
 .recycle-item-container {
   text-align: center;
-  background: white;
+  background: rgb(234, 234, 234);
   color: #000;
   padding: 20px;
 }
@@ -2223,7 +2223,7 @@ figure.snip1200.hover p {
 
 .recycle-item-card img {
   width: 100%;
-  height: auto;
+  height: 14rem;
 }
 
 .recycle-item-card-content {
