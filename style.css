@@ -1588,6 +1588,28 @@ figure.snip1200.hover p {
             
           }
         }
+
+        .freight-forwarding-bottom{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .freight-box{
+          width: 25%;
+          text-align: center;
+          padding: 1rem 0;
+          i{
+            font-size: 3rem;
+          }
+        }
+        .freight-red{
+          background: #000;
+          color: white;
+        }
+        .freight-black{
+          background: #ff3433;
+        }
         .warehouse-main{
           display: flex;
           flex-direction: row;
