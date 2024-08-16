@@ -437,7 +437,7 @@ svg{
     }
   }
   .customer-logos{
-    width: 90%;
+    width: 100%;
   }
  
   
@@ -449,6 +449,8 @@ svg{
   
   .slick-slide img {
     width: 100%;
+    height: 14rem;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
   }
@@ -481,7 +483,7 @@ svg{
   
   .partner-slide {
     display: none;
-    float: left;
+    float:left;
     height: 100%;
     min-height: 1px;
   }
@@ -512,6 +514,48 @@ svg{
       margin: 0 5px;
     }
   }
+
+  .affiliation-main{
+    display: flex;
+    color: #000;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .affiliation-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Evenly space out the images */
+    align-items: center;
+    gap: 20px; /* Optional, to add space between items */
+  }
+  
+  .affiliation {
+    flex: 1; /* Make all items take equal space */
+    max-width: 200px; /* Limit the maximum size */
+    min-width: 100px; /* Set a minimum size */
+    text-align: center; /* Center images if needed */
+  }
+  
+  .affiliation img {
+    max-width: 100%;
+    height: auto; /* Ensure images scale with the container */
+  }
+  
+  @media (max-width: 600px) {
+    .affiliation-container {
+      flex-direction: column;
+    }
+  
+    .affiliation {
+      max-width: 100%;
+    }
+  }
+  
+
+
 
  
         /* Footer Container */
@@ -1492,6 +1536,29 @@ figure.snip1200.hover p {
         }
         }
 
+       .transportation-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding-bottom: 20px;
+       }
+       .transportation-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+       }
+       .transport-mean{
+        width: 35rem;
+        p{
+          text-align: left;
+        }
+       }
+
         .freight-forwarding-main{
           display: flex;
           flex-direction: row;
@@ -1953,6 +2020,7 @@ figure.snip1200.hover p {
 }
 
 
+
 .ceo-text {
   width: 550px;
   color: #000;
@@ -2240,4 +2308,161 @@ figure.snip1200.hover p {
   font-size: 1em;
   color: #bbbbbb;
   margin-top: 10px;
+}
+
+/* Consultancy Container */
+
+.consultancy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.consultancy-container h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.consultancy-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.consultancy-content img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.consultancy-text {
+  flex: 2;
+}
+
+.consultancy-name {
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+.consultancy-contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.consultancy-contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.consultancy-contact-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.consultancy-contact-link:hover {
+  background-color: #003d7a;
+}
+
+.consultancy-image img{
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .consultancy-content {
+      flex-direction: column;
+  }
+
+  .consultancy-content img {
+      margin: 0 auto 20px auto;
+  }
+
+  .consultancy-text {
+      flex: none;
+  }
+
+  
+
+  .consultancy-contact-section p {
+      font-size: 1em;
+  }
+
+}
+.consultancy-services {
+  padding-bottom: 40px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.consultancy-services h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.consultancy-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.consultancy-card {
+  background-color: #000000;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consultancy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.consultancy-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ff3433;
+}
+
+.consultancy-card p {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .consultancy-card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .consultancy-card {
+      width: 100%;
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 560px) {
+  
+  .consultancy-image img{
+    width: 350px;
+    height: 430px;
+    object-fit: cover;
+  }
 }
