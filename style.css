@@ -2585,7 +2585,19 @@ ceo-text ul {
 
 
 
-
+.latest-projects{
+  color:white;
+  text-align: center;
+  background: #000;
+  h1{
+    margin:0;
+    font-size: 40px;
+   
+  }
+  span{
+      color: red;
+  }
+}
 
 .energy-horizontal-card-container {
   display: flex;
