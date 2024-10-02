@@ -16,7 +16,6 @@ svg{
 }
 
 
-/* Navbar styling */
 .navbar {
   background-color: #ffffff;
   height: 70px;
@@ -31,14 +30,14 @@ svg{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Logo */
+
 .navbar-logo img {
   width: 4rem;
   height: 4rem;
   padding-left: 40px;
 }
 
-/* Navbar links */
+
 .navbar-links {
   display: flex;
   align-items: center;
@@ -60,7 +59,7 @@ svg{
   border-radius: 5px;
 }
 
-/* Main dropdown for 'Our Projects' */
+
 .dropdown {
   position: relative;
 }
@@ -118,12 +117,12 @@ svg{
   z-index: 1000;
 }
 
-/* Show the right-aligned dropdown on hover */
+
 .dropdown-submenu:hover .dropdown-menu-left {
   display: block;
 }
 
-/* Styling for the links in the right dropdown */
+
 .dropdown-menu-left a {
   display: block;
   padding: 10px 15px;
@@ -136,7 +135,7 @@ svg{
   color: white;
 }
 
-/* Styling for the right-aligned dropdown toggle links */
+
 .dropdown-toggle-right {
   padding: 10px 15px;
   color: #ff3433;
@@ -149,7 +148,7 @@ svg{
   color: white;
 }
 
-/* Navbar toggle for mobile (hamburger) */
+
 #navbar-toggle {
   display: none;
 }
@@ -167,7 +166,7 @@ svg{
   width: 25px;
 }
 
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
   .navbar-logo img {
     padding-left: 10px;
@@ -204,18 +203,18 @@ svg{
     background-color: transparent;
   }
 
-  /* Hide the 'Completed Projects' and 'Projects In Progress' titles */
+ 
   .dropdown-submenu > .dropdown-toggle-right {
     display: none;
   }
 
-  /* Show the inner links (children) of Completed Projects and Projects In Progress */
+  
   .dropdown-submenu .dropdown-menu-left {
     display: block;
     position: static;
     background-color: transparent;
     box-shadow: none;
-    padding-left: 20px; /* Indentation for clarity */
+    padding-left: 20px;
   }
 
   #navbar-toggle:checked + .navbar-toggle-label + .navbar-links {
