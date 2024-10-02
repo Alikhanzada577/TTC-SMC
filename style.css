@@ -107,7 +107,7 @@ svg{
 }
 
 
-.dropdown-menu-right {
+.dropdown-menu-left {
   display: none;
   position: absolute;
   top: 0;
@@ -119,19 +119,19 @@ svg{
 }
 
 /* Show the right-aligned dropdown on hover */
-.dropdown-submenu:hover .dropdown-menu-right {
+.dropdown-submenu:hover .dropdown-menu-left {
   display: block;
 }
 
 /* Styling for the links in the right dropdown */
-.dropdown-menu-right a {
+.dropdown-menu-left a {
   display: block;
   padding: 10px 15px;
   color: #ff3433;
   text-decoration: none;
 }
 
-.dropdown-menu-right a:hover {
+.dropdown-menu-left a:hover {
   background-color: rgb(255, 42, 42);
   color: white;
 }
@@ -210,7 +210,7 @@ svg{
   }
 
   /* Show the inner links (children) of Completed Projects and Projects In Progress */
-  .dropdown-submenu .dropdown-menu-right {
+  .dropdown-submenu .dropdown-menu-left {
     display: block;
     position: static;
     background-color: transparent;
