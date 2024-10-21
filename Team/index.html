@@ -2,105 +2,145 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTC Team</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team - The Throne Chasers</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    
+
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar-logo">
+  <header>
+    <nav class="navbar">
+      <div class="branding">
         <a href="/"><img src="../img/logo.png" alt="Logo"></a>
-    </div>
-    <input type="checkbox" id="navbar-toggle">
-    <label for="navbar-toggle" class="navbar-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <div class="navbar-links">
-        
-       
-        <div class="dropdown">
-          <a href="/" class="dropdown-toggle">Home</a>
-          <div class="dropdown-menu">
-              <a href="/#affiliation">Affiliation</a>
-              
-          </div>
       </div>
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Businesses</a>
-            <div class="dropdown-menu">
-                <a href="/International Trade/">International Trade</a>
-                <a href="/logistics/">Logistics</a>
-                <a href="/Construction/">Construction</a>
-                <a href="/Construction/#EngineeringProjects">Engineering Solutions</a>
-                <a href="/Energy/">Energy</a>
-                <a href="/DesignConsultancy&solution/">Design & Consultancy Expertise</a>
-            </div>
-        </div>
-        <div class="dropdown">
-          <a href="#" class="dropdown-toggle">Our Projects</a>
-          <div class="dropdown-menu">
-              <div class="dropdown-submenu">
-                  <a href="#" class="dropdown-toggle-right">Completed Projects</a>
-                  <div class="dropdown-menu-right">
-                      <a href="../Energy/#20MW"> Solar Energy 
-                      </a>
-                      <a href="/Construction/#EngineeringProjects">Construction </a>
-                  </div>
-              </div>
-              <div class="dropdown-submenu">
-                  <a href="#" class="dropdown-toggle-right">Projects In Progress</a>
-                  <div class="dropdown-menu-right">
-                      <a href="../Energy/#20MW">20 MW DHA City Karachi  
-                      </a>
-                      <a href="/Construction/ConstructionProject3.html">Keti Bander Port Development </a>
-                      <a href="/Construction/#EngineeringProjects">TTC Tower DHA City Karachi </a>
-                      <a href="/Construction/#EngineeringProjects">TTC Tower DHA Bahawalpur </a>
-                      <a href="/Construction/#EngineeringProjects">TTC Tower DHA Islamabad </a>
-                     
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-        <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Media</a>
-            <div class="dropdown-menu">
-                <a href="/Construction/">Blog</a>
-                <a href="/Energy/">News</a>
-                <a href="/logistics/">Updates</a>
-            </div>
-        </div>
-        <div class="dropdown">
-          <a href="/about/" class="dropdown-toggle">About</a>
-          <div class="dropdown-menu">
-              <a href="/about/#vision">Vision</a>
-              <a href="/about/#Mision">Mission</a>
-              <a href="/CEO Message/">CEO Message</a>
-              <a href="../Team/">Our Team</a>
-          </div>
-      </div>
-        <a href="/Team/" class="disabled"></a>
-        
-    </div>
-</nav>
-    <div class="team-container">
-        <img src="../img/freight-forwarding.jpeg" alt="Background Image" class="background-image" />
-        <div class="gradient-overlay"></div>
-        <div class="contact-text">Our Team</div>
-    </div>
+      <label for="input-hamburger" class="hamburger "></label>
+      <input type="checkbox" id="input-hamburger" hidden>
+      <ul class="menu">
+        <li class="has-dropdown">
+          <a href="/" class="menu-link">Home
+          </a>
 
-    <!-- <div class="ceo-container">
+        </li>
+
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Businesses
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="/International Trade/" class="menu-link">International Trade</a></li>
+            <li><a href="/logistics/" class="menu-link">Logistics</a></li>
+            <li><a href="/Construction/" class="menu-link">Construction</a></li>
+            <li><a href="/Construction/#EngineeringProjects" class="menu-link">Engineering Solutions</a></li>
+            <li><a href="/Energy/" class="menu-link">Energy</a></li>
+            <li><a href="/DesignConsultancy&solution/" class="menu-link">Design & Consultancy</a></li>
+            <li><a href="/waste-management/" class="menu-link">Waste Management</a></li>
+          </ul>
+        </li>
+
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Our Projects
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li class="has-dropdown">
+              <a href="#" class="menu-link">Completed Projects
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li><a href="../Energy/#20MW" class="menu-link">Solar Energy</a></li>
+                <li><a href="/Construction/#EngineeringProjects" class="menu-link">Construction</a></li>
+
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#" class="menu-link">Projects In Progress
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li class="has-dropdown">
+                  <a href="#" class="menu-link">Solar Energy
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="../Energy/#20MW" class="menu-link">20 MW DHA CITY KARACHI</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#" class="menu-link">Shipping & Ports
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="/Construction/ConstructionProject3.html" class="menu-link">Keti bandar Port
+                        Development</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="/Construction/" class="menu-link">Construction
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA City KARACHI</a>
+                    </li>
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA Islamabad</a></li>
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA Bhawalpur</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Media
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" class="menu-link">Blogs</a></li>
+            <li><a href="#" class="menu-link">News</a></li>
+            <li><a href="#" class="menu-link">Updates</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="/about/" class="menu-link">About
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="/about/#Mision" class="menu-link">Mission</a></li>
+            <li><a href="/about/#vision" class="menu-link">Vision</a></li>
+            <li><a href="/CEO Message/" class="menu-link">CEO Message</a></li>
+            <li><a href="../Team/" class="menu-link">Our Team</a></li>
+            <li><a href="/#affiliation" class="menu-link">Affiliations</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown" style="visibility: hidden;">
+          <a href="#" class="menu-link">About
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" class="menu-link">Mission</a></li>
+            <li><a href="#" class="menu-link">Vision</a></li>
+            <li><a href="#" class="menu-link">CEO Message</a></li>
+            <li><a href="#" class="menu-link">Our Team</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="team-container">
+    <img src="../img/freight-forwarding.jpeg" alt="Background Image" class="background-image" />
+    <div class="gradient-overlay"></div>
+    <div class="contact-text">Our Team</div>
+  </div>
+
+  <!-- <div class="ceo-container">
         <h2 class="ceo-container-heading">CEO's  MESSAGE</h2>
         <div class="ceo-inner-container">
           <div class="ceo-wrapper">
@@ -133,13 +173,13 @@
 
 
 
-<div class="core-team-container">
-   
+  <div class="core-team-container">
+
     <h2 class="core-team-heading">Our Core Team</h2>
-  
-    
+
+
     <div class="core-team-inner-container">
-     
+
       <div class="core-team-card">
         <div class="core-team-image">
           <img src="../img/teamember.jpeg" alt="Team Member 1">
@@ -147,20 +187,20 @@
         <h2 class="core-team-name">Anwar Saeed Kalvi</h2>
         <p class="core-team-description">Commercial Director</p>
       </div>
-  
-      
+
+
       <div class="core-team-card">
         <div class="core-team-image">
-          <img src="../img/port.png"  alt="Team Member 2">
+          <img src="../img/Aizaz_Pervaiz_upscaled.jpg" alt="Team Member 2">
         </div>
         <h2 class="core-team-name">Aizaz Pervaiz </h2>
-        <p class="core-team-description">Project Directors</p>
+        <p class="core-team-description">Project Director</p>
       </div>
-  
-     
+
+
       <div class="core-team-card">
         <div class="core-team-image">
-          <img src="../img/port.png"  alt="Team Member 3">
+          <img src="../img/port.png" alt="Team Member 3">
         </div>
         <h2 class="core-team-name">Zubair Butt </h2>
         <p class="core-team-description">Logistics Manager</p>
@@ -182,85 +222,103 @@
     <div class="ceo-inner-container ">
       <div class="teammember-wrapper">
         <div class="ceo-text">
-          <p>Management Professional with Master of Business Administration, MSc Chemistry & Post Graduate Diploma 
-            in H.R Management From Australia carrying 
+          <p>Management Professional with Master of Business Administration, MSc Chemistry & Post Graduate Diploma
+            in H.R Management From Australia carrying
             experience in Public sector as Director General & Advisor in different Organization</p>
-            <ul>
-              <li>Strong leader with strategic planning and tactical implementation capabilities</li>
-              <li>Visionary leader and innovative thinker with broad expertise in best practices for strategy operations</li>
-              <li>Hands-on process orientation and cross-functional experience at the management level</li>
-              <li>Proven ability to implement a performance-driven culture
+          <ul>
+            <li>Strong leader with strategic planning and tactical implementation capabilities</li>
+            <li>Visionary leader and innovative thinker with broad expertise in best practices for strategy operations
+            </li>
+            <li>Hands-on process orientation and cross-functional experience at the management level</li>
+            <li>Proven ability to implement a performance-driven culture
               Conducted organizational diagnostic studies to identify gaps from best management practices</li>
-              <li>Suggested human and system performance improvement measures</li>
-              <li>Member Board of Directors Wapda (GEPCO) Employees Cooperative Society.</li>
+            <li>Suggested human and system performance improvement measures</li>
+            <li>Member Board of Directors Wapda (GEPCO) Employees Cooperative Society.</li>
             <li>Chairperson Wapda Hospital monitoring cell</li>
             <li> Chairman Gepco sports committee.</li>
-            <li>Director Training cell  Gepco. </li>
+            <li>Director Training cell Gepco. </li>
             <li>Consultant Faisalabad Industrial Estate Development and Management Company</li>
             <li> Consultant Health in working women development foundation.</li>
             <li> Consultant Punjab Group of colleges.</li>
-            </ul> 
-           
-          
+          </ul>
+
+
         </div>
         <div class="ceo-image">
           <img src="../img/teamember.jpeg" alt="CEO Image">
         </div>
-      
+
       </div>
-  </div>
+    </div>
   </div>
 
-   
+  <div class="project-director-container">
+    <h2 class="project-director-heading">Meet Our Project Director</h2>
+    <div class="project-director-container ">
+      <div class="project-director-teammember-wrapper">
+        <div class="project-director-text">
+          <p>He holds an MBA and has over 8 years of experience in project management for civil and electrical projects.
+          </p>
+         
+
+
+        </div>
+        <div class="project-director-image">
+          <img src="../img/Aizaz_Pervaiz_upscaled.jpg" alt="Project Director Image">
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <footer class="footer-container">
-        
+
     <div class="footer-logo">
-        <img src="../img/logo.png" alt="Company Logo">
-        
+      <img src="../img/logo.png" alt="Company Logo">
+
     </div>
     <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-            <li><a href="../">Company</a></li>
-            <li><a href="../Careers/index.html">Careers</a></li>
-            <li><a href="../contact/">Contact Us</a></li>
-        </ul>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../">Company</a></li>
+        <li><a href="../Careers/index.html">Careers</a></li>
+        <li><a href="../contact/">Contact Us</a></li>
+      </ul>
     </div>
     <div class="footer-business">
-        <h4>Business</h4>
-        <ul>
-            <li><a href="../Construction/">Constrution</a></li>
-            <li><a href="../logistics/">Logistics</a></li>
-            <li><a href="../International Trade/">International Trade</a></li>
-            <li><a href="../Energy/">Energy</a></li>
-            <li><a href="../waste-management/">Waste Management</a></li>
-        </ul>
+      <h4>Business</h4>
+      <ul>
+        <li><a href="../Construction/">Constrution</a></li>
+        <li><a href="../logistics/">Logistics</a></li>
+        <li><a href="../International Trade/">International Trade</a></li>
+        <li><a href="../Energy/">Energy</a></li>
+        <li><a href="../waste-management/">Waste Management</a></li>
+      </ul>
     </div>
     <div class="footer-contact">
-        <h4>Contact Details</h4>
-        <ul>
-            <li>Email: <a href="mailto:info@hoh.net">info@thethronechasers.com</a></li>
-            <li>Phone: <a href="tel:+922134312030">+92 21 32440322</a></li>
-            <li>Address: Business Plaza, 1008, Mumtaz Hassan
-                Road Karachi
-                </li>
-        </ul>
+      <h4>Contact Details</h4>
+      <ul>
+        <li>Email: <a href="mailto:info@hoh.net">info@thethronechasers.com</a></li>
+        <li>Phone: <a href="tel:+922134312030">+92 21 32440322</a></li>
+        <li>Address: Business Plaza, 1008, Mumtaz Hassan
+          Road Karachi
+        </li>
+      </ul>
     </div>
     <div class="footer-bottom">
-        <div class="footer-copyright">
-            <p>© The Throne Chasers. 2024 All Rights Reserved.</p>
-        </div>
-    <div class="footer-social">
+      <div class="footer-copyright">
+        <p>© The Throne Chasers. 2024 All Rights Reserved.</p>
+      </div>
+      <div class="footer-social">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
     </div>
-    
-</div>
-</footer>
-    
+  </footer>
+
 
 </body>
 

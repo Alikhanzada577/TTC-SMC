@@ -1,161 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Waste Recyle</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Recyle - The Throne Chasers</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 </head>
+
 <body>
 
+  <header>
     <nav class="navbar">
-        <div class="navbar-logo">
-            <a href="/"><img src="../img/logo.png" alt="Logo"></a>
-        </div>
-        <input type="checkbox" id="navbar-toggle">
-        <label for="navbar-toggle" class="navbar-toggle-label">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <div class="navbar-links">
-            
-           
-            <div class="dropdown">
-              <a href="/" class="dropdown-toggle">Home</a>
-              <div class="dropdown-menu">
-                  <a href="/#affiliation">Affiliation</a>
-                  
-              </div>
-          </div>
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle">Businesses</a>
-                <div class="dropdown-menu">
-                    <a href="/International Trade/">International Trade</a>
-                    <a href="/logistics/">Logistics</a>
-                    <a href="/Construction/">Construction</a>
-                    <a href="/Construction/#EngineeringProjects">Engineering Solutions</a>
-                    <a href="/Energy/">Energy</a>
-                    <a href="/DesignConsultancy&solution/">Design & Consultancy Expertise</a>
-                </div>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="dropdown-toggle">Our Projects</a>
-              <div class="dropdown-menu">
-                  <div class="dropdown-submenu">
-                      <a href="#" class="dropdown-toggle-right">Completed Projects</a>
-                      <div class="dropdown-menu-right">
-                          <a href="../Energy/#20MW"> Solar Energy 
-                          </a>
-                          <a href="/Construction/#EngineeringProjects">Construction </a>
-                      </div>
-                  </div>
-                  <div class="dropdown-submenu">
-                      <a href="#" class="dropdown-toggle-right">Projects In Progress</a>
-                      <div class="dropdown-menu-right">
-                          <a href="../Energy/#20MW">20 MW DHA City Karachi  
-                          </a>
-                          <a href="/Construction/ConstructionProject3.html">Keti Bander Port Development </a>
-                          <a href="/Construction/#EngineeringProjects">TTC Tower DHA City Karachi </a>
-                          <a href="/Construction/#EngineeringProjects">TTC Tower DHA Bahawalpur </a>
-                          <a href="/Construction/#EngineeringProjects">TTC Tower DHA Islamabad </a>
-                         
-                      </div>
-                  </div>
-              </div>
-          </div>
+      <div class="branding">
+        <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+      </div>
+      <label for="input-hamburger" class="hamburger "></label>
+      <input type="checkbox" id="input-hamburger" hidden>
+      <ul class="menu">
+        <li class="has-dropdown">
+          <a href="/" class="menu-link">Home
+          </a>
           
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle">Media</a>
-                <div class="dropdown-menu">
-                    <a href="/Construction/">Blog</a>
-                    <a href="/Energy/">News</a>
-                    <a href="/logistics/">Updates</a>
-                </div>
-            </div>
-            <div class="dropdown">
-              <a href="/about/" class="dropdown-toggle">About</a>
-              <div class="dropdown-menu">
-                  <a href="/about/#vision">Vision</a>
-                  <a href="/about/#Mision">Mission</a>
-                  <a href="/CEO Message/">CEO Message</a>
-                  <a href="../Team/">Our Team</a>
-              </div>
-          </div>
-            <a href="/Team/" class="disabled"></a>
-            
-        </div>
-    </nav>
+        </li>
 
-      <div class="energy-container">
-        <div class="energy-large">
-          <img src="../img/wasterecycle2.png" />
-          <div class="energy-mid">
-            <div class="energy-ltext">
-              <h1>Waste Recyle</h1>
-              <p>
-                With over 20 years of combined experience in the waste management industry, TTC is well-equipped to serve a wide 
-                range of clients in the recycling sector. We support projects at all stages—from initial conception and design
-                 development to implementation, maintenance, and optimization of existing recycling systems. Our services include
-                  technical advisory, process completion,
-                 and commissioning. TTC has successfully managed and protected recycling projects by developing industry-specific 
-                 methods and tools to monitor, control, and safeguard our clients’ waste recycling processes and infrastructure.
-              </p>
-            </div>
-          </div>
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Businesses
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="/International Trade/" class="menu-link">International Trade</a></li>
+            <li><a href="/logistics/" class="menu-link">Logistics</a></li>
+            <li><a href="/Construction/" class="menu-link">Construction</a></li>
+            <li><a href="/Construction/#EngineeringProjects" class="menu-link">Engineering Solutions</a></li>
+            <li><a href="/Energy/" class="menu-link">Energy</a></li>
+            <li><a href="/DesignConsultancy&solution/" class="menu-link">Design & Consultancy</a></li>
+            <li><a href="/waste-management/" class="menu-link">Waste Management</a></li>
+          </ul>
+        </li>
+
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Our Projects
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li class="has-dropdown">
+              <a href="#" class="menu-link">Completed Projects
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li><a href="../Energy/#20MW" class="menu-link">Solar Energy</a></li>
+                <li><a href="/Construction/#EngineeringProjects" class="menu-link">Construction</a></li>
+
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="#" class="menu-link">Projects In Progress
+                <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                <li class="has-dropdown">
+                  <a href="#" class="menu-link">Solar Energy
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="../Energy/#20MW" class="menu-link">20 MW DHA CITY KARACHI</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="#" class="menu-link">Shipping & Ports
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="/Construction/ConstructionProject3.html" class="menu-link">Keti bandar Port
+                        Development</a></li>
+                  </ul>
+                </li>
+                <li class="has-dropdown">
+                  <a href="/Construction/" class="menu-link">Construction
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA City KARACHI</a>
+                    </li>
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA Islamabad</a></li>
+                    <li><a href="/Construction/#EngineeringProjects" class="menu-link">TTC Tower DHA Bhawalpur</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Media
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" class="menu-link">Blogs</a></li>
+            <li><a href="#" class="menu-link">News</a></li>
+            <li><a href="#" class="menu-link">Updates</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown">
+          <a href="/about/" class="menu-link">About
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="/about/#Mision" class="menu-link">Mission</a></li>
+            <li><a href="/about/#vision" class="menu-link">Vision</a></li>
+            <li><a href="/CEO Message/" class="menu-link">CEO Message</a></li>
+            <li><a href="../Team/" class="menu-link">Our Team</a></li>
+            <li><a href="/#affiliation" class="menu-link">Affiliations</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown" style="visibility: hidden;">
+          <a href="#" class="menu-link">About
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="#" class="menu-link">Mission</a></li>
+            <li><a href="#" class="menu-link">Vision</a></li>
+            <li><a href="#" class="menu-link">CEO Message</a></li>
+            <li><a href="#" class="menu-link">Our Team</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="energy-container">
+    <div class="energy-large">
+      <img src="../img/wasterecycle2.png" />
+      <div class="energy-mid">
+        <div class="energy-ltext">
+          <h1>Waste Recycle</h1>
+          <h4>Welcome to The Throne Chasers</h4>
+          <p>Transforming Plastic Waste into a Sustainable Future
+          </p>
+          <h4>Our Story</h4>
+          <p>
+            Founded in 2017, The Throne Chasers is a pioneering organization dedicated to tackling the plastic waste epidemic. Our team of experts combines innovative technology with community-driven initiatives to create a cleaner, greener tomorrow
+
+          </p>
         </div>
       </div>
-
-      <footer class="footer-container">
-        
-        <div class="footer-logo">
-            <img src="../img/logo.png" alt="Company Logo">
-            
-        </div>
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="../">Company</a></li>
-                <li><a href="../Careers/index.html">Careers</a></li>
-                <li><a href="../contact/">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="footer-business">
-            <h4>Business</h4>
-            <ul>
-                <li><a href="../Construction/">Constrution</a></li>
-                <li><a href="../logistics/">Logistics</a></li>
-                <li><a href="../International Trade/">International Trade</a></li>
-                <li><a href="../Energy/">Energy</a></li>
-                <li><a href="../waste-management/">Waste Management</a></li>
-            </ul>
-        </div>
-        <div class="footer-contact">
-            <h4>Contact Details</h4>
-            <ul>
-                <li>Email: <a href="mailto:info@hoh.net">info@thethronechasers.com</a></li>
-                <li>Phone: <a href="tel:+922134312030">+92 21 32440322</a></li>
-                <li>Address: Business Plaza, 1008, Mumtaz Hassan
-                    Road Karachi
-                    </li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-copyright">
-                <p>© The Throne Chasers. 2024 All Rights Reserved.</p>
-            </div>
-        <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        
     </div>
-    </footer>
+  </div>
+  <div class="impact">
+    <h1>Our Impact</h1>
+  </div>
+  <div id="custom-counter-waste">
+
+    <div class="custom-items-waste">
+      <h1 class="custom-count-waste" data-number="500"></h1>
+      <h3 class="text">tons of plastic waste recycled annually
+      </h3>
+    </div>
+    <div class="custom-items-waste">
+      <h1 class="custom-count-waste" data-number="200"></h1>
+      <h3 class="text">communities empowered through education
+      </h3>
+    </div>
+    <div class="custom-items-waste">
+      <h1 class="custom-count-waste" data-number="50"></h1>
+      <h3 class="text"> businesses partnered for sustainable growth
+      </h3>
+    </div>
+  </div>
+
+  <section class="waste-services-section">
+    <h2>Key Services in Waste Management</h2>
+    <div class="hex-container-waste">
+      <div class="hex-waste">
+        <div class="icon-waste">
+          <i class="fa fa-truck"></i>
+        </div>
+        <h3>Waste Collection</h3>
+      </div>
+      <div class="hex-waste">
+        <div class="icon-waste">
+          <i class="fa fa-recycle"></i>
+        </div>
+        <h3>Recycling Technologies</h3>
+      </div>
+      <div class="hex-waste">
+        <div class="icon-waste">
+          <i class="fa fa-box-open"></i>
+        </div>
+        <h3>Product Manufacturing</h3>
+      </div>
+      <div class="hex-waste">
+        <div class="icon-waste">
+          <i class="fa fa-chalkboard-teacher"></i>
+        </div>
+        <h3>Consultancy</h3>
+      </div>
+      <div class="hex-waste">
+        <div class="icon-waste">
+          <i class="fa fa-users"></i>
+        </div>
+        <h3>Community Outreach</h3>
+      </div>
+    </div>
+  </section>
+
+  <div class="waste-third-div">
+    <div>
+      <h2 class="main-heading">Our Expertise</h2>
+
+    </div>
+
+    <div class="waste-expertise-cards">
+      <figure class="waste-snip1200">
+        <img src="../img/waste-management.jpg" alt="" />
+        <figcaption>
+
+          <div class="heading">
+            <h2><span> Plastic Waste Management
+              </span></h2>
+          </div>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="waste-snip1200 ">
+        <img src="/img/recycling-technology.jpeg" alt="sq-sample31" />
+        <figcaption>
+
+          <div class="heading">
+            <h2><span>Recycling Technology
+              </span></h2>
+          </div>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="waste-snip1200">
+        <img src="/img/waste-consulting.webp" alt="sq-sample32" />
+        <figcaption>
+
+          <div class="heading">
+            <h2><span> Sustainability Consulting
+              </span></h2>
+          </div>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+      <figure class="waste-snip1200">
+        <img src="/img/waste-community.jpg" alt="sq-sample32" />
+        <figcaption>
+
+          <div class="heading">
+            <h2><span>Community Engagement
+
+              </span></h2>
+          </div>
+        </figcaption>
+        <a href="#"></a>
+      </figure>
+    </div>
+  </div>
+
+
+  <div class="partnerships-section">
+    <h2 class="main-heading">Partnerships</h2>
+    <p><b>COLLABORATE WITH US TO</b></p>
+    <div class="partnership-cards">
+      <div class="partnership-card">
+        <div class="icon">
+          <i class="fas fa-trash-alt"></i> <!-- Waste Reduction Icon -->
+        </div>
+        <h3>Reduce Waste & Increase Efficiency</h3>
+        <p>Collaborate with us to reduce waste and enhance your business efficiency.</p>
+      </div>
+  
+      <div class="partnership-card">
+        <div class="icon">
+          <i class="fas fa-leaf"></i> <!-- Sustainability Icon -->
+        </div>
+        <h3>Develop Sustainable Practices</h3>
+        <p>Partner with us to develop long-lasting sustainable business practices.</p>
+      </div>
+  
+      <div class="partnership-card">
+        <div class="icon">
+          <i class="fas fa-graduation-cap"></i> <!-- Education Icon -->
+        </div>
+        <h3>Educate & Engage Community</h3>
+        <p>Work with us to educate and engage your community in environmental efforts.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="news-insights-section">
+    <h2>News and Insights</h2>
+    <div class="insights-list">
+      <div class="insight-item">
+        <h3>Industry Trends and Innovations</h3>
+        <p>Stay updated on the latest trends shaping our industry and the innovative solutions making waves.</p>
+      </div>
+      
+      <div class="insight-item">
+        <h3>Success Stories and Case Studies</h3>
+        <p>Explore inspiring success stories and in-depth case studies showcasing real-world applications.</p>
+      </div>
+  
+      <div class="insight-item">
+        <h3>Expert Advice and Best Practices</h3>
+        <p>Gain valuable insights from industry experts and learn best practices to enhance your strategies.</p>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="footer-container">
+
+    <div class="footer-logo">
+      <img src="../img/logo.png" alt="Company Logo">
+
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="../">Company</a></li>
+        <li><a href="../Careers/index.html">Careers</a></li>
+        <li><a href="../contact/">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-business">
+      <h4>Business</h4>
+      <ul>
+        <li><a href="../Construction/">Constrution</a></li>
+        <li><a href="../logistics/">Logistics</a></li>
+        <li><a href="../International Trade/">International Trade</a></li>
+        <li><a href="../Energy/">Energy</a></li>
+        <li><a href="../waste-management/">Waste Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Details</h4>
+      <ul>
+        <li>Email: <a href="mailto:info@hoh.net">info@thethronechasers.com</a></li>
+        <li>Phone: <a href="tel:+922134312030">+92 21 32440322</a></li>
+        <li>Address: Business Plaza, 1008, Mumtaz Hassan
+          Road Karachi
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>© The Throne Chasers. 2024 All Rights Reserved.</p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+
+    </div>
+  </footer>
+  <script>let customItems = document.querySelectorAll('.custom-count-waste');
+
+    customItems.forEach(function (item) {
+      let startNumber = 0;
+
+      function counterUp() {
+        startNumber += 10;
+        item.innerHTML = startNumber;
+
+        if (startNumber == item.dataset.number) {
+          clearInterval(stop);
+          item.innerHTML = item.dataset.number + "+";
+        }
+      }
+
+      let stop = setInterval(counterUp, 50);
+    });
+  </script>
 </body>
+
 </html>

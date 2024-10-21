@@ -1,3 +1,7 @@
+const hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", function () {
+  this.classList.toggle("close");
+});
 
 let slider = document.querySelector('.slider .list');
 let items = document.querySelectorAll('.slider .list .item');
